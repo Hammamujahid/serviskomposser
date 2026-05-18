@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PT. Dayasa Cipta Mandiri – Service Compressor</title>
+    <title>PT. Dayasa Cipta Mandiri - Service Compressor</title>
     <meta
       name="description"
       content="Melayani jasa Service, Overhaul, Maintenance, Troubleshooting dan Penyediaan Sparepart Compressor & Pendingin di Surabaya, Sidoarjo, Gresik & Mojokerto."
@@ -15,387 +15,403 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="nav-logo">
-        <span>PT. Dayasa</span>
-        <span>Cipta Mandiri</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#beranda" data-i18n="nav_home">Beranda</a></li>
-        <li><a href="#layanan" data-i18n="nav_services">Layanan</a></li>
-        <li><a href="#tim" data-i18n="nav_team">Tim Kami</a></li>
-        <li>
-          <a href="#hubungi" class="nav-cta" data-i18n="nav_contact"
-            >Hubungi Kami</a
-          >
-        </li>
-      </ul>
-      <div class="lang-toggle">
-        <button class="lang-btn" id="btnID" onclick="setLang('id')">
-          <img src="/assets/images/indonesia_flag.png" alt="ID" />
+    <header>
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <div class="nav-logo">
+          <span>PT. Dayasa</span>
+          <span>Cipta Mandiri</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#beranda" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="#layanan" data-i18n="nav_services">Layanan</a></li>
+          <li><a href="#tim" data-i18n="nav_team">Tim Kami</a></li>
+          <li>
+            <a href="#hubungi" class="nav-cta" data-i18n="nav_contact"
+              >Hubungi Kami</a
+            >
+          </li>
+        </ul>
+        <div class="lang-toggle">
+          <button class="lang-btn" id="btnID" onclick="setLang('id')">
+            <img src="/assets/images/indonesia_flag.png" alt="ID" />
+          </button>
+          <button class="lang-btn" id="btnEN" onclick="setLang('en')">
+            <img src="/assets/images/uk_flag.png" alt="EN" />
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
         </button>
-        <button class="lang-btn" id="btnEN" onclick="setLang('en')">
-          <img src="/assets/images/uk_flag.png" alt="EN" />
-        </button>
+      </nav>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#beranda" onclick="closeMobile()" data-i18n="nav_home"
+          >Beranda</a
+        >
+        <a href="#layanan" onclick="closeMobile()" data-i18n="nav_services"
+          >Layanan</a
+        >
+        <a href="#tim" onclick="closeMobile()" data-i18n="nav_team">Tim Kami</a>
+        <a href="#hubungi" onclick="closeMobile()" data-i18n="nav_contact"
+          >Hubungi Kami</a
+        >
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
+    </header>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#beranda" onclick="closeMobile()" data-i18n="nav_home"
-        >Beranda</a
-      >
-      <a href="#layanan" onclick="closeMobile()" data-i18n="nav_services"
-        >Layanan</a
-      >
-      <a href="#tim" onclick="closeMobile()" data-i18n="nav_team">Tim Kami</a>
-      <a href="#hubungi" onclick="closeMobile()" data-i18n="nav_contact"
-        >Hubungi Kami</a
-      >
-    </div>
+    <main>
+      <!-- HERO -->
+      <section id="beranda">
+        <div class="hero-content">
+          <h1>
+            PT. DAYASA CIPTA MANDIRI
+            <span>Service Compressor</span>
+          </h1>
 
-    <!-- HERO -->
-    <section id="beranda">
-      <div class="hero-content">
-        <h1 data-i18n="hero_h1">
-          PT. DAYASA CIPTA MANDIRI
-          <br><br><em>Service Compressor</em>
-        </h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Melayani jasa Service, Overhaul, Maintenance, Troubleshooting
+            Compressor, Air Dryer dan Penyediaan Kompresor Baru/Bekas,
+            Sparepart serta Rental Kompresor
+          </p>
+        </div>
+        <div class="hero-free-check" data-i18n="hero_free_check">
+          Gratis Biaya Pengecekan Untuk Wilayah Surabaya, Sidoarjo, Gresik &
+          Mojokerto
+        </div>
+      </section>
 
-        <p class="hero-desc" data-i18n="hero_desc">
-          Melayani jasa Service, Overhaul, Maintenance, Troubleshooting dan
-          Penyediaan Sparepart Compressor & Pendingin
-        </p>
-      </div>
-      <div class="hero-free-check" data-i18n="hero_free_check">
-        Gratis Biaya Pengecekan Untuk Wilayah Surabaya, Sidoarjo, Gresik &
-        Mojokerto
-      </div>
-    </section>
-
-    <!-- TENTANG -->
-    <section id="tentang">
-      <div class="tentang-flex">
-        <div class="tentang-text reveal">
-          <div class="section-label" data-i18n="tentang_label">
-            Tentang Kami
+      <!-- TENTANG -->
+      <section id="tentang">
+        <div class="tentang-flex">
+          <div class="tentang-text reveal">
+            <h2 class="section-label" data-i18n="tentang_label">
+              Tentang Kami
+            </h2>
+            <div class="tentang-text-grid">
+              <div>
+                <p data-i18n="tentang_p1">
+                  <strong>PT. DAYASA CIPTA MANDIRI</strong> adalah perusahaan
+                  yang bergerak di bidang servis dan perawatan kompresor angin
+                  (air compressor), Screw Kompresor, Piston Kompresor, Air
+                  Dryer, jual/beli kompresor baru/bekas, rental kompresor serta
+                  penyediaan sparepart asli/OEM. Kami berdedikasi untuk
+                  menyediakan layanan teknis berkualitas tinggi yang mendukung
+                  kelangsungan produksi dan operasional industri di Indonesia.
+                  Dengan teknisi berpengalaman lebih dari 10 tahun dan
+                  profesional, kami memahami pentingnya kinerja optimal
+                  kompresor udara untuk mendukung produktivitas dan efisiensi
+                  energi.
+                </p>
+                <p data-i18n="tentang_p2">
+                  <strong>PT. DAYASA CIPTA MANDIRI</strong> akan terus berusaha
+                  memberikan layanan terbaik dan berkualitas untuk memenuhi
+                  persyaratan spesifikasi Anda. Anda dapat yakin bahwa
+                  perusahaan kami dapat mengatasi masalah dan memberikan solusi
+                  terbaik untuk merawat dan memelihara fasilitas Anda.
+                </p>
+              </div>
+              <div class="tentang-image reveal">
+                <img src="/assets/images/dummy.png" alt="Tentang Kami" />
+              </div>
+            </div>
           </div>
-          <div class="tentang-text-grid">
-            <div>
-              <p data-i18n="tentang_p1">
-                <strong>PT. DAYASA CIPTA MANDIRI</strong> adalah perusahaan yang
-                bergerak di bidang servis dan perawatan kompresor angin (air
-                compressor), screw compressor, piston compressor ser ta mesin
-                pendingin industri. Kami berdedikasi untuk menyediakan layanan
-                teknis berkualitas tinggi yang mendukung kelangsungan produksi
-                dan operasional industri di Indonesia. Dengan teknisi
-                berpengalaman lebih dari 10 tahun dan profesional, kami memahami
-                pentingnya kinerja optimal kompresor udara untuk mendukung
-                produktivitas dan efisiensi energi.
-              </p>
-              <p data-i18n="tentang_p2">
-                <strong>PT. DAYASA CIPTA MANDIRI</strong> akan terus berusaha
-                memberikan layanan terbaik dan berkualitas untuk memenuhi
-                persyaratan spesifikasi anda. Anda dapat yakin bahwa perusahaan
-                kami dapat mengatasi masalah dan memberikan solusi terbaik untuk
-                merawat dan memelihara fasilitas anda.
+          <div class="visi-misi-grid reveal">
+            <div class="vm-card">
+              <h3 data-i18n="visi_title">Visi</h3>
+              <p
+                style="font-size: 13px; line-height: 1.7"
+                data-i18n="visi_text"
+              >
+                Menjadi perusahaan jasa servis, overhaul dan perawatan kompresor
+                serta mesin pendingin terpercaya di Indonesia dengan
+                mengutamakan kualitas, kecepatan dan kepuasan pelanggan.
               </p>
             </div>
-            <div class="tentang-image reveal">
-              <img src="/assets/images/dummy.png" alt="Tentang Kami" />
+            <div class="vm-card" style="margin-top: 2px">
+              <h3 data-i18n="misi_title">Misi</h3>
+              <ul>
+                <li data-i18n="misi1">
+                  Memberikan layanan servis dan overhaul berkualitas tinggi
+                  dengan standar industri
+                </li>
+                <li data-i18n="misi2">
+                  Memberikan solusi perawatan dan perbaikan kompresor yang
+                  efektif dan efisien
+                </li>
+                <li data-i18n="misi3">
+                  Mengutamakan kualitas layanan dengan teknisi profesional
+                </li>
+                <li data-i18n="misi4">
+                  Memberikan respon cepat dalam layanan darurat untuk menjaga
+                  kelangsungan operasional pelanggan
+                </li>
+                <li data-i18n="misi5">
+                  Menjalin hubungan kerja sama jangka panjang berbasis
+                  kepercayaan dan profesionalisme
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="visi-misi-grid reveal">
-          <div class="vm-card">
-            <h3 data-i18n="visi_title">Visi</h3>
-            <p style="font-size: 13px; line-height: 1.7" data-i18n="visi_text">
-              Menjadi perusahaan jasa servis, overhaul dan perawatan kompresor
-              serta mesin pendingin terpercaya di Indonesia dengan mengutamakan
-              kualitas, kecepatan dan kepuasan pelanggan.
-            </p>
-          </div>
-          <div class="vm-card" style="margin-top: 2px">
-            <h3 data-i18n="misi_title">Misi</h3>
+      </section>
+
+      <!-- LAYANAN -->
+      <section id="layanan">
+        <h2 class="section-label reveal" data-i18n="layanan_label">
+          Layanan Kami
+        </h2>
+
+        <div class="layanan-grid">
+          <div class="layanan-card blue-card reveal">
+            <div class="card-icon"><span class="card-num">01</span></div>
+            <h3 data-i18n="l1_title">
+              Jasa Perbaikan &<br />Overhaul Compressor
+            </h3>
             <ul>
-              <li data-i18n="misi1">
-                Memberikan layanan servis dan overhaul berkualitas tinggi dengan
-                standar industri
+              <li data-i18n="l1_1">Overhaul total screw elemen</li>
+              <li data-i18n="l1_2">Replacing bearing, seal kit & gasket</li>
+              <li data-i18n="l1_3">Balancing rotor screw (male & female)</li>
+            </ul>
+          </div>
+
+          <div class="layanan-card yellow-card reveal">
+            <div class="card-icon"><span class="card-num">02</span></div>
+            <h3 data-i18n="l2_title">
+              Jasa Maintenance &<br />Service Berkala
+            </h3>
+            <ul>
+              <li data-i18n="l2_1">
+                Penggantian filter oli, filter udara & separator
               </li>
-              <li data-i18n="misi2">
-                Memberikan solusi perawatan dan perbaikan kompresor yang efektif
-                dan efisien
+              <li data-i18n="l2_2">
+                Penggantian oli kompresor (synthetic/mineral)
               </li>
-              <li data-i18n="misi3">
-                Mengutamakan kualitas layanan dengan teknisi profesional
+              <li data-i18n="l2_3">Pemeriksaan item kontrol</li>
+            </ul>
+          </div>
+
+          <div class="layanan-card yellow-card reveal">
+            <div class="card-icon"><span class="card-num">03</span></div>
+            <h3 data-i18n="l3_title">Troubleshooting<br />Darurat</h3>
+            <ul>
+              <li data-i18n="l3_1">
+                24 jam layanan darurat untuk kerusakan kompressor
               </li>
-              <li data-i18n="misi4">
-                Memberikan respon cepat dalam layanan darurat untuk menjaga
-                kelangsungan operasional pelanggan
-              </li>
-              <li data-i18n="misi5">
-                Menjalin hubungan kerja sama jangka panjang berbasis kepercayaan
-                dan profesionalisme
+            </ul>
+          </div>
+
+          <div class="layanan-card blue-card reveal">
+            <div class="card-icon"><span class="card-num">04</span></div>
+            <h3 data-i18n="l4_title">Penyedia Sparepart<br />Asli & OEM</h3>
+            <ul>
+              <li data-i18n="l4_1">Filter (oli, udara, separator)</li>
+              <li data-i18n="l4_2">Thermostat & Solenoid Valve</li>
+              <li data-i18n="l4_3">
+                Sensor Tekanan & berbagai spare part lainnya
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- LAYANAN -->
-    <section id="layanan">
-      <div class="section-label reveal" data-i18n="layanan_label">
-        Layanan Kami
-      </div>
-
-      <div class="layanan-grid">
-        <div class="layanan-card blue-card reveal">
-          <div class="card-icon"><span class="card-num">01</span></div>
-          <h3 data-i18n="l1_title">
-            Jasa Perbaikan &<br />Overhaul Compressor
-          </h3>
-          <ul>
-            <li data-i18n="l1_1">Overhaul total screw elemen</li>
-            <li data-i18n="l1_2">Replacing bearing, seal kit & gasket</li>
-            <li data-i18n="l1_3">Balancing rotor screw (male & female)</li>
-          </ul>
-        </div>
-
-        <div class="layanan-card yellow-card reveal">
-          <div class="card-icon"><span class="card-num">02</span></div>
-          <h3 data-i18n="l2_title">Jasa Maintenance &<br />Service Berkala</h3>
-          <ul>
-            <li data-i18n="l2_1">
-              Penggantian filter oli, filter udara & separator
-            </li>
-            <li data-i18n="l2_2">
-              Penggantian oli kompresor (synthetic/mineral)
-            </li>
-            <li data-i18n="l2_3">Pemeriksaan item kontrol</li>
-          </ul>
-        </div>
-
-        <div class="layanan-card yellow-card reveal">
-          <div class="card-icon"><span class="card-num">03</span></div>
-          <h3 data-i18n="l3_title">Troubleshooting<br />Darurat</h3>
-          <ul>
-            <li data-i18n="l3_1">
-              24 jam layanan darurat untuk kerusakan kompressor
-            </li>
-          </ul>
-        </div>
-
-        <div class="layanan-card blue-card reveal">
-          <div class="card-icon"><span class="card-num">04</span></div>
-          <h3 data-i18n="l4_title">Penyedia Sparepart<br />Asli & OEM</h3>
-          <ul>
-            <li data-i18n="l4_1">Filter (oli, udara, separator)</li>
-            <li data-i18n="l4_2">Thermostat & Solenoid Valve</li>
-            <li data-i18n="l4_3">
-              Sensor Tekanan & berbagai spare part lainnya
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- TIM -->
-    <section id="tim">
-      <div class="reveal">
-        <div class="section-label" data-i18n="tim_label">Tim Kami</div>
-      </div>
-      <div class="tim-intro">
-        <div class="tim-intro-text reveal">
-          <p data-i18n="tim_p1">
-            <strong>Di Dayasa Cipta Mandiri</strong>, kami percaya bahwa
-            kekuatan utama kami terletak pada tim yang solid, berpengalaman, dan
-            berdedikasi tinggi. Tim kami terdiri dari para profesional dengan
-            latar belakang teknik, yang telah teruji dalam proyek skala kecil
-            hingga besar.
-          </p>
-          <p data-i18n="tim_p2">
-            Kami menjunjung tinggi nilai nilai profesionalisme, ketelitian, dan
-            tanggung jawab dalam setiap pekerjaan. Didukung oleh pengalaman ber
-            tahun tahun dan pemahaman mendalam terhadap sistem pendingin dan
-            kompresor, kami siap memberikan solusi terbaik yang andal dan sesuai
-            dengan kebutuhan pelanggan.
-          </p>
-          <p data-i18n="tim_p3">
-            Komitmen kami adalah memastikan setiap mesin yang kami tangani
-            kembali beroperasi dengan performa optimal, demi mendukung
-            kelancaran operasional bisnis Anda.
-          </p>
-        </div>
-        <img
-          src="/assets/images/dummy.png"
-          alt="Tim Dayasa Cipta Mandiri"
-          class="reveal"
-        />
-      </div>
-
-      <div class="divisi">
-        <div class="divisi-grid-1">
-          <div class="reveal">
-            <div class="section-label" data-i18n="divisi1_label">
-              Divisi Mechanical
-            </div>
-            <p data-i18n="mech_p1">
-              <strong>Divisi Mechanical Dayasa Cipta Mandiri</strong> menangani
-              berbagai pekerjaan yang berkaitan dengan sistem mekanik, khususnya
-              dalam servis, overhaul, dan perawatan kompressor serta mesin
-              pendingin. Tim kami terdiri dari teknisi terlatih yang
-              berpengalaman dalam pembongkaran, pemeriksaan, penggantian suku
-              cadang, serta perakitan ulang unit secara presisi. Kami memastikan
-              setiap proses dilakukan sesuai standar keselamatan kerja dan
-              spesifikasi teknis pabrikan.
-            </p>
-          </div>
-          <div class="reveal">
-            <img src="/assets/images/dummy.png" alt="MECHANICAL" />
-          </div>
-        </div>
-
-        <div class="divisi-grid-2">
-          <div class="reveal">
-            <img src="/assets/images/dummy.png" alt="ELECTRICAL" />
-          </div>
-          <div class="reveal">
-            <div class="section-label" data-i18n="divisi2_label">
-              Divisi Electrical
-            </div>
-            <p data-i18n="elec_p1">
-              <strong>Divisi Electrical Dayasa Cipta Mandiri</strong> fokus pada
-              penanganan sistem kelistrikan yang mendukung pengoperasian
-              kompressor dan mesin pendingin. Mulai dari instalasi panel
-              kontrol, perbaikan wiring, troubleshooting sistem kelistrikan,
-              hingga penggantian komponen elektronik. Dengan pemahaman mendalam
-              terhadap sistem otomatisasi dan kontrol industri, kami menjamin
-              keandalan sistem listrik yang mendukung efisiensi kerja dan
-              keamanan operasional mesin.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BRANDS -->
-    <section id="brands">
-      <div class="section-label reveal" data-i18n="brands_label">
-        Brand Yang Kami Tangani
-      </div>
-      <div class="brands-grid reveal">
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-
-        <div class="brand-item">
-          <img src="/assets/images/dummy.png" alt="Brand" />
-        </div>
-      </div>
-    </section>
-
-    <!-- HUBUNGI -->
-    <section id="hubungi">
-      <div class="section-label reveal" data-i18n="hubungi_label">
-        Hubungi Kami
-      </div>
-      <div class="hubungi-grid">
-        <div>
-          <p
-            class="section-intro reveal"
-            style="margin-bottom: 8px"
-            data-i18n="hubungi_intro1"
-          >
-            Punya masalah dengan kompressor Anda? Tim teknisi kami siap membantu
-            dengan solusi cepat, tepat, dan terpercaya.
-          </p>
-          <p
-            class="section-intro reveal"
-            style="margin-bottom: 8px"
-            data-i18n="hubungi_intro2"
-          >
-            Untuk informasi lebih lanjut, konsultasi gratis, atau penjadwalan
-            service silahkan hubungi kami melalui :
-          </p>
-
-          <div class="contact-cards">
-            <div class="contact-item reveal">
-              <div class="contact-icon">📞</div>
-              <div class="contact-value" data-i18n="contact_phone_label">
-                No. Telepon :
-                <a href="https://wa.me/6285791719393" target="_blank"
-                  >085791719393</a
-                >
-              </div>
-            </div>
-            <div class="contact-item reveal">
-              <div class="contact-icon">✉️</div>
-              <div class="contact-value">
-                <a href="mailto:dayasaciptamandiri@gmail.com"
-                  >dayasaciptamandiri@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="contact-item reveal">
-              <div class="contact-icon">📍</div>
-              <div class="contact-value" data-i18n="contact_ws_value">
-                Workshop : Jl. Laban Kulon GG. I RT. 14/RW.01 Menganti,
-                Gresik, Jawa Timur 61174
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <!-- TIM -->
+      <section id="tim">
         <div class="reveal">
-  <div class="map-wrapper">
-    <iframe
-      src="https://www.google.com/maps?q=Jl.+Laban+Kulon+GG.+I,+Menganti,+Gresik,+Jawa+Timur+61174&output=embed"
-      width="100%"
-      height="100%"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
-      </div>
-    </section>
+          <h2 class="section-label" data-i18n="tim_label">Tim Kami</h2>
+        </div>
+        <div class="tim-intro">
+          <div class="tim-intro-text reveal">
+            <p data-i18n="tim_p1">
+              <strong>Di Dayasa Cipta Mandiri</strong>, kami percaya bahwa
+              kekuatan utama kami terletak pada tim yang solid, berpengalaman,
+              dan berdedikasi tinggi. Tim kami terdiri dari para profesional
+              dengan latar belakang teknik, yang telah teruji dalam proyek skala
+              kecil hingga besar.
+            </p>
+            <p data-i18n="tim_p2">
+              Kami menjunjung tinggi nilai nilai profesionalisme, ketelitian,
+              dan tanggung jawab dalam setiap pekerjaan. Didukung oleh
+              pengalaman ber tahun tahun dan pemahaman mendalam terhadap sistem
+              pendingin dan kompresor, kami siap memberikan solusi terbaik yang
+              andal dan sesuai dengan kebutuhan pelanggan.
+            </p>
+            <p data-i18n="tim_p3">
+              Komitmen kami adalah memastikan setiap mesin yang kami tangani
+              kembali beroperasi dengan performa optimal, demi mendukung
+              kelancaran operasional bisnis Anda.
+            </p>
+          </div>
+          <img
+            src="/assets/images/dummy.png"
+            alt="Tim Dayasa Cipta Mandiri"
+            class="reveal"
+          />
+        </div>
+
+        <div class="divisi">
+          <div class="divisi-grid-1">
+            <div class="reveal">
+              <h3 class="section-label" data-i18n="divisi1_label">
+                Divisi Mechanical
+              </h3>
+              <p data-i18n="mech_p1">
+                <strong>Divisi Mechanical Dayasa Cipta Mandiri</strong>
+                menangani berbagai pekerjaan yang berkaitan dengan sistem
+                mekanik, khususnya dalam servis, overhaul, dan perawatan
+                kompressor serta mesin pendingin. Tim kami terdiri dari teknisi
+                terlatih yang berpengalaman dalam pembongkaran, pemeriksaan,
+                penggantian suku cadang, serta perakitan ulang unit secara
+                presisi. Kami memastikan setiap proses dilakukan sesuai standar
+                keselamatan kerja dan spesifikasi teknis pabrikan.
+              </p>
+            </div>
+            <div class="reveal">
+              <img src="/assets/images/dummy.png" alt="MECHANICAL" />
+            </div>
+          </div>
+
+          <div class="divisi-grid-2">
+            <div class="reveal">
+              <img src="/assets/images/dummy.png" alt="ELECTRICAL" />
+            </div>
+            <div class="reveal">
+              <h3 class="section-label" data-i18n="divisi2_label">
+                Divisi Electrical
+              </h3>
+              <p data-i18n="elec_p1">
+                <strong>Divisi Electrical Dayasa Cipta Mandiri</strong> fokus
+                pada penanganan sistem kelistrikan yang mendukung pengoperasian
+                kompressor dan mesin pendingin. Mulai dari instalasi panel
+                kontrol, perbaikan wiring, troubleshooting sistem kelistrikan,
+                hingga penggantian komponen elektronik. Dengan pemahaman
+                mendalam terhadap sistem otomatisasi dan kontrol industri, kami
+                menjamin keandalan sistem listrik yang mendukung efisiensi kerja
+                dan keamanan operasional mesin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRANDS -->
+      <section id="brands">
+        <h2 class="section-label reveal" data-i18n="brands_label">
+          Brand Yang Kami Tangani
+        </h2>
+        <div class="brands-grid reveal">
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+
+          <figure class="brand-item">
+            <img src="/assets/images/dummy.png" alt="Brand" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- HUBUNGI -->
+      <section id="hubungi">
+        <h2 class="section-label reveal" data-i18n="hubungi_label">
+          Hubungi Kami
+        </h2>
+        <div class="hubungi-grid">
+          <div>
+            <p
+              class="section-intro reveal"
+              style="margin-bottom: 8px"
+              data-i18n="hubungi_intro1"
+            >
+              Punya masalah dengan kompressor Anda? Tim teknisi kami siap
+              membantu dengan solusi cepat, tepat, dan terpercaya.
+            </p>
+            <p
+              class="section-intro reveal"
+              style="margin-bottom: 8px"
+              data-i18n="hubungi_intro2"
+            >
+              Untuk informasi lebih lanjut, konsultasi gratis, atau penjadwalan
+              service silahkan hubungi kami melalui :
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-item reveal">
+                <div class="contact-icon">📞</div>
+                <div class="contact-value" data-i18n="contact_phone_label">
+                  No. Telepon :
+                  <a
+                    href="https://wa.me/6285791719393"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >085791719393</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item reveal">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-value">
+                  <a href="mailto:dayasaciptamandiri@gmail.com"
+                    >dayasaciptamandiri@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item reveal">
+                <div class="contact-icon">📍</div>
+                <address class="contact-value" data-i18n="contact_ws_value">
+                  Workshop : Jl. Laban Kulon GG. I RT. 14/RW.01 Menganti,
+                  Gresik, Jawa Timur 61174
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps?q=Jl.+Laban+Kulon+GG.+I,+Menganti,+Gresik,+Jawa+Timur+61174&output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
@@ -407,7 +423,8 @@
       href="https://wa.me/6285791719393"
       target="_blank"
       class="wa-float"
-      title="Chat WhatsApp"
+      aria-label="Chat WhatsApp"
+      rel="noopener noreferrer"
     >
       <svg
         width="26"
