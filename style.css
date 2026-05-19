@@ -67,7 +67,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 2%;
   height: 68px;
   background: rgb(7, 33, 86);
   backdrop-filter: blur(18px);
@@ -77,15 +77,29 @@ nav {
 
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  gap: 1px;
+  align-items: center;
+  gap: 12px;
+
   /* font-family: var(--font-display); */
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--gold);
   text-transform: uppercase;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   line-height: 1;
+}
+
+.nav-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -825,6 +839,10 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .nav-logo {gap: 6px;
+  font-size: 15px;
+
+}
   .nav-links {
     display: none;
   }
@@ -930,6 +948,7 @@ footer {
 }
 
 @media (max-width: 500px) {
+  
   .brands-grid {
     grid-template-columns: repeat(2, 1fr);
   }
