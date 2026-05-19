@@ -49,9 +49,10 @@
           </div>
         </div>
         <ul class="nav-links">
-          <li><a href="#beranda" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="" data-i18n="nav_home">Beranda</a></li>
           <li><a href="#layanan" data-i18n="nav_services">Layanan</a></li>
           <li><a href="#tim" data-i18n="nav_team">Tim Kami</a></li>
+          <li><a href="/gallery.html" data-i18n="nav_gallery">Galeri</a></li>
           <li>
             <a href="#hubungi" class="nav-cta" data-i18n="nav_contact"
               >Hubungi Kami</a
@@ -73,11 +74,12 @@
 
       <!-- MOBILE MENU -->
       <div class="mobile-menu" id="mobileMenu">
-        <a href="#beranda" onclick="closeMobile()" data-i18n="nav_home"
-          >Beranda</a
-        >
+        <a href="" onclick="closeMobile()" data-i18n="nav_home">Beranda</a>
         <a href="#layanan" onclick="closeMobile()" data-i18n="nav_services"
           >Layanan</a
+        >
+        <a href="/gallery.html" onclick="closeMobile()" data-i18n="nav_gallery"
+          >Galeri</a
         >
         <a href="#tim" onclick="closeMobile()" data-i18n="nav_team">Tim Kami</a>
         <a href="#hubungi" onclick="closeMobile()" data-i18n="nav_contact"
@@ -147,39 +149,49 @@
               </div>
             </div>
           </div>
-          <div class="visi-misi-grid reveal">
-            <div class="vm-card">
+          <div class="visi-misi-grid">
+            <div class="vm-card reveal">
               <h3 data-i18n="visi_title">Visi</h3>
               <p
                 style="font-size: 13px; line-height: 1.7"
                 data-i18n="visi_text"
               >
-                Menjadi perusahaan jasa servis, overhaul dan perawatan kompresor
-                serta mesin pendingin terpercaya di Indonesia dengan
-                mengutamakan kualitas, kecepatan dan kepuasan pelanggan.
+                Menjadi perusahaan terpercaya dan profesional di bidang servis,
+                overhaul, rental, penjualan kompresor serta penyedia sparepart
+                kompresor di Indonesia dengan mengutamakan kualitas, kecepatan
+                layanan, dan kepuasan pelanggan.
               </p>
             </div>
-            <div class="vm-card" style="margin-top: 2px">
+            <div class="vm-card reveal" style="margin-top: 2px">
               <h3 data-i18n="misi_title">Misi</h3>
               <ul>
                 <li data-i18n="misi1">
-                  Memberikan layanan servis dan overhaul berkualitas tinggi
-                  dengan standar industri
+                  Memberikan layanan servis, maintenance, dan overhaul kompresor
+                  sesuai standar industri.
                 </li>
                 <li data-i18n="misi2">
-                  Memberikan solusi perawatan dan perbaikan kompresor yang
-                  efektif dan efisien
+                  Menyediakan kompresor baru/bekas berkualitas serta layanan
+                  rental yang terpercaya dan efisien.
                 </li>
                 <li data-i18n="misi3">
-                  Mengutamakan kualitas layanan dengan teknisi profesional
+                  Menyediakan sparepart asli/OEM dengan kualitas terbaik dan
+                  harga kompetitif.
                 </li>
                 <li data-i18n="misi4">
-                  Memberikan respon cepat dalam layanan darurat untuk menjaga
-                  kelangsungan operasional pelanggan
+                  Mengutamakan respon cepat dan solusi tepat untuk menjaga
+                  kelangsungan operasional pelanggan.
                 </li>
                 <li data-i18n="misi5">
-                  Menjalin hubungan kerja sama jangka panjang berbasis
-                  kepercayaan dan profesionalisme
+                  Mengembangkan tenaga teknisi yang profesional, kompeten, dan
+                  berintegritas tinggi.
+                </li>
+                <li data-i18n="misi6">
+                  Menjalin hubungan kerja sama jangka panjang dengan pelanggan
+                  berdasarkan kepercayaan dan profesionalisme.
+                </li>
+                <li data-i18n="misi7">
+                  Mendukung efisiensi energi dan produktivitas industri melalui
+                  sistem kompresor yang optimal dan handal.
                 </li>
               </ul>
             </div>
@@ -244,6 +256,21 @@
             </ul>
           </div>
         </div>
+
+        <div class="produk-grid">
+          <div class="produk-card reveal">
+            <div class="product-image">
+              <img src="/assets/images/oil.png" alt="Oil Compressor" />
+            </div>
+            <div>
+              <div class="product-title" data-i18n="product_1">Oli</div>
+              <p data-i18n="product_1_desc">
+                Oli kompresor berkualitas tinggi untuk menjaga performa dan umur
+                mesin compressor industri.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- TIM -->
@@ -288,11 +315,11 @@
                 <strong>Divisi Mechanical Dayasa Cipta Mandiri</strong>
                 menangani berbagai pekerjaan yang berkaitan dengan sistem
                 mekanik, khususnya dalam servis, overhaul, dan perawatan
-                kompressor serta mesin pendingin. Tim kami terdiri dari teknisi
-                terlatih yang berpengalaman dalam pembongkaran, pemeriksaan,
-                penggantian suku cadang, serta perakitan ulang unit secara
-                presisi. Kami memastikan setiap proses dilakukan sesuai standar
-                keselamatan kerja dan spesifikasi teknis pabrikan.
+                kompressor. Tim kami terdiri dari teknisi terlatih yang
+                berpengalaman dalam pembongkaran, pemeriksaan, penggantian suku
+                cadang, serta perakitan ulang unit secara presisi. Kami
+                memastikan setiap proses dilakukan sesuai standar keselamatan
+                kerja dan spesifikasi teknis pabrikan.
               </p>
             </div>
             <div class="reveal">
@@ -317,16 +344,36 @@
               <p data-i18n="elec_p1">
                 <strong>Divisi Electrical Dayasa Cipta Mandiri</strong> fokus
                 pada penanganan sistem kelistrikan yang mendukung pengoperasian
-                kompressor dan mesin pendingin. Mulai dari instalasi panel
-                kontrol, perbaikan wiring, troubleshooting sistem kelistrikan,
-                hingga penggantian komponen elektronik. Dengan pemahaman
-                mendalam terhadap sistem otomatisasi dan kontrol industri, kami
-                menjamin keandalan sistem listrik yang mendukung efisiensi kerja
-                dan keamanan operasional mesin.
+                kompressor. Mulai dari instalasi panel kontrol, perbaikan
+                wiring, troubleshooting sistem kelistrikan, hingga penggantian
+                komponen elektronik. Dengan pemahaman mendalam terhadap sistem
+                otomatisasi dan kontrol industri, kami menjamin keandalan sistem
+                listrik yang mendukung efisiensi kerja dan keamanan operasional
+                mesin.
               </p>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- GALERI -->
+      <section id="gallery">
+        <div class="gallery-header">
+          <h2 class="section-label reveal" data-i18n="galeri_label">Galeri</h2>
+          <a
+            href="/gallery.html"
+            class="show-more-btn reveal"
+            data-i18n="galeri_semua"
+          >
+            Lihat Semua <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="gallery-slider reveal" id="galSlider">
+          <div class="gallery-track" id="galTrack"></div>
+        </div>
+
+        <div class="gallery-nav" id="galNav"></div>
       </section>
 
       <!-- BRANDS -->
@@ -384,6 +431,9 @@
 
           <figure class="brand-item">
             <img src="/assets/images/Atlas Copco.png" alt="Atlas Copco" />
+          </figure>
+          <figure class="brand-item">
+            <img src="/assets/images/bebicon.png" alt="Hitachi Bebicon" />
           </figure>
         </div>
       </section>
