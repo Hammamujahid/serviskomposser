@@ -52,9 +52,10 @@ const translations = {
     l4_1: "Filter (oli, udara, separator)",
     l4_2: "Thermostat & Solenoid Valve",
     l4_3: "Sensor Tekanan & berbagai spare part lainnya",
-    product_1: "Oli",
+    product_1: "Oli Kompresor",
     product_1_desc:
       "Oli kompresor berkualitas tinggi untuk menjaga performa dan umur mesin compressor industri.",
+    product_order: "Pesan Sekarang",
     tim_label: "Tim Kami",
     tim_p1:
       "<strong>Di Dayasa Cipta Mandiri</strong>, kami percaya bahwa kekuatan utama kami terletak pada tim yang solid, berpengalaman, dan berdedikasi tinggi. Tim kami terdiri dari para profesional dengan latar belakang teknik, yang telah teruji dalam proyek skala kecil hingga besar.",
@@ -70,6 +71,13 @@ const translations = {
       "<strong>Divisi Electrical Dayasa Cipta Mandiri</strong> fokus pada penanganan sistem kelistrikan yang mendukung pengoperasian kompressor. Mulai dari instalasi panel kontrol, perbaikan wiring, troubleshooting sistem kelistrikan, hingga penggantian komponen elektronik. Dengan pemahaman mendalam terhadap sistem otomatisasi dan kontrol industri, kami menjamin keandalan sistem listrik yang mendukung efisiensi kerja dan keamanan operasional mesin.",
     galeri_label: "Galeri",
     galeri_semua: 'Lihat Semua <span class="btn-arrow">→</span>',
+    testimoni_label: "Apa Kata Mereka?",
+    testimoni_1: "Pekerjaannya rapi dan baik. Pelayanan sangat memuaskan dan cepat tanggap 👍",
+    testimoni_2: "Sparepart terjamin, aftersales baik dan harga kompetitif",
+    testimoni_3: "Solutif dalam berkonsultasi dan pengerjaan",
+    testimoni_4: "Solutif dan harga bersaing",
+    testimoni_5: "Teknisi profesional dan fast respon",
+    testimoni_6: "Teknisi berpengalaman",
     brands_label: "Brand Yang Kami Tangani",
     hubungi_label: "Hubungi Kami",
     hubungi_intro1:
@@ -88,7 +96,8 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact Us",
     hero_h1: "PT. DAYASA CIPTA MANDIRI<span>Compressor Service</span>",
-    hero_gallery_h1: "PT. DAYASA CIPTA MANDIRI<span>Documentation Gallery</span>",
+    hero_gallery_h1:
+      "PT. DAYASA CIPTA MANDIRI<span>Documentation Gallery</span>",
     hero_desc:
       "Serving Service, Overhaul, Maintenance, Troubleshooting for Compressor, Air Dryer and Providing New/Used Compressor, Sparepart and Compressor Rental",
     hero_desc_gallery:
@@ -132,10 +141,11 @@ const translations = {
     l4_1: "Filters (oil, air, separator)",
     l4_2: "Thermostat & Solenoid Valve",
     l4_3: "Pressure Sensor & various other spare parts",
-    product_1: "Oil",
+    product_1: "Compressor Oil",
     product_1_desc:
       "High-quality compressor oil to maintain the performance and lifespan of industrial compressor machines.",
-    tim_label: "Our Team",
+    product_order: "Order Now",
+      tim_label: "Our Team",
     tim_p1:
       "<strong>At Dayasa Cipta Mandiri</strong>, we believe that our main strength lies in a solid, experienced, and highly dedicated team. Our team consists of professionals with technical backgrounds, who have been tested in projects ranging from small to large scale.",
     tim_p2:
@@ -151,6 +161,13 @@ const translations = {
 
     galeri_label: "Gallery",
     galeri_semua: 'Show All <span class="btn-arrow">→</span>',
+    testimoni_label: "What They Say?",
+    testimoni_1: "The work is neat and good. The service is very satisfying and responsive 👍",
+    testimoni_2: "The spare parts are guaranteed, the after-sales service is good, and the prices are competitive.",
+    testimoni_3: "Helpful in consultation and execution.",
+    testimoni_4: "Solutif and competitive pricing.",
+    testimoni_5: "Professional technicians and fast response.",
+    testimoni_6: "Experienced technicians.",
     brands_label: "Brands We Service",
     hubungi_label: "Contact Us",
     hubungi_intro1:
@@ -390,5 +407,148 @@ function handleSubmit(e) {
   slider.addEventListener("touchmove", (e) => {
     if (!isDragging) return;
     currentX = touchStartPos + (e.touches[0].pageX - touchStartX);
+  });
+})();
+
+(function () {
+  const DATA = [
+    {
+      name: "Na'imatul Widad Tasniyah",
+      stars: 5,
+      text: "Pekerjaannya rapi dan baik. Pelayanan sangat memuaskan dan cepat tanggap 👍",
+    },
+    {
+      name: "Ayu Aprilliany",
+      stars: 5,
+      text: "Sparepart terjamin, aftersales baik dan harga kompetitif",
+    },
+    {
+      name: "Sudjiono Dahlan",
+      stars: 5,
+      text: "Solutif dalam berkonsultasi dan pengerjaan",
+    },
+    {
+      name: "Agus Abiyadi",
+      stars: 5,
+      text: "Solutif dan harga bersaing",
+    },
+    {
+      name: "Mun Tiana",
+      stars: 5,
+      text: "Teknisi profesional dan fast respon",
+    },
+    {
+      name: "Hanifah",
+      stars: 5,
+      text: "Teknisi berpengalaman",
+    },
+  ];
+
+  const AVATAR_COLORS = [
+    { bg: "#dbeafe", fg: "#1e40af" },
+    { bg: "#dcfce7", fg: "#166534" },
+    { bg: "#fef9c3", fg: "#854d0e" },
+    { bg: "#fce7f3", fg: "#9d174d" },
+    { bg: "#ede9fe", fg: "#4c1d95" },
+    { bg: "#ffedd5", fg: "#7c2d12" },
+  ];
+
+  function initials(name) {
+    return name
+      .split(" ")
+      .map((w) => w[0])
+      .slice(0, 2)
+      .join("");
+  }
+
+  function renderStars(n) {
+    return Array.from(
+      { length: 5 },
+      (_, i) => `<span class="t-star${i < n ? "" : " empty"}">★</span>`,
+    ).join("");
+  }
+
+  const track = document.getElementById("tTrack");
+  const dotsEl = document.getElementById("tDots");
+
+  /* Render kartu */
+  DATA.forEach((d, i) => {
+    const color = AVATAR_COLORS[i % AVATAR_COLORS.length];
+    const card = document.createElement("div");
+    card.className = "t-card";
+    card.innerHTML = `
+      <div class="t-stars">${renderStars(d.stars)}</div>
+      <p class="t-quote" data-i18n="testimoni_${i + 1}">${d.text}</p>
+      <hr class="t-divider"/>
+      <div class="t-person">
+        <div class="t-avatar" style="background:${color.bg};color:${color.fg}">${initials(d.name)}</div>
+        <div class="t-name">${d.name}</div>
+      </div>`;
+    track.appendChild(card);
+  });
+
+  /* Deteksi jumlah kartu yang terlihat */
+  function visibleCount() {
+    return window.innerWidth <= 560 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  }
+
+  const TOTAL = DATA.length;
+  let cur = 0;
+
+  function maxIdx() {
+    return Math.max(0, TOTAL - visibleCount());
+  }
+
+  function cardWidth() {
+    const c = track.querySelector(".t-card");
+    if (!c) return 0;
+    return c.offsetWidth + 20;
+  }
+
+  function goTo(idx) {
+    cur = Math.max(0, Math.min(idx, maxIdx()));
+    track.style.transform = `translateX(-${cardWidth() * cur}px)`;
+    dotsEl
+      .querySelectorAll(".t-dot")
+      .forEach((d, i) => d.classList.toggle("active", i === cur));
+  }
+
+  /* Render dots */
+  function renderDots() {
+    dotsEl.innerHTML = "";
+    const count = maxIdx() + 1;
+    for (let i = 0; i < count; i++) {
+      const btn = document.createElement("button");
+      btn.className = "t-dot" + (i === cur ? " active" : "");
+      btn.setAttribute("aria-label", `Halaman ${i + 1}`);
+      btn.addEventListener("click", () => goTo(i));
+      dotsEl.appendChild(btn);
+    }
+  }
+
+  renderDots();
+
+  /* Auto slide tiap 4 detik */
+  let autoTimer = setInterval(() => goTo(cur >= maxIdx() ? 0 : cur + 1), 4000);
+
+  track.addEventListener("mouseenter", () => clearInterval(autoTimer));
+  track.addEventListener("mouseleave", () => {
+    autoTimer = setInterval(() => goTo(cur >= maxIdx() ? 0 : cur + 1), 4000);
+  });
+
+  /* Touch swipe */
+  let touchStartX = 0;
+  track.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].pageX;
+  });
+  track.addEventListener("touchend", (e) => {
+    const diff = touchStartX - e.changedTouches[0].pageX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? cur + 1 : cur - 1);
+  });
+
+  /* Re-render saat resize */
+  window.addEventListener("resize", () => {
+    renderDots();
+    goTo(Math.min(cur, maxIdx()));
   });
 })();

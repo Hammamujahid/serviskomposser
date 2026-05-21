@@ -94,7 +94,7 @@
           <li><a href="" data-i18n="nav_home">Beranda</a></li>
           <li><a href="#layanan" data-i18n="nav_services">Layanan</a></li>
           <li><a href="#tim" data-i18n="nav_team">Tim Kami</a></li>
-          <li><a href="/gallery.html" data-i18n="nav_gallery">Galeri</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">Galeri</a></li>
           <li>
             <a href="#hubungi" class="nav-cta" data-i18n="nav_contact"
               >Hubungi Kami</a
@@ -120,7 +120,7 @@
         <a href="#layanan" onclick="closeMobile()" data-i18n="nav_services"
           >Layanan</a
         >
-        <a href="/gallery.html" onclick="closeMobile()" data-i18n="nav_gallery"
+        <a href="#gallery" onclick="closeMobile()" data-i18n="nav_gallery"
           >Galeri</a
         >
         <a href="#tim" onclick="closeMobile()" data-i18n="nav_team">Tim Kami</a>
@@ -304,12 +304,25 @@
             <div class="product-image">
               <img src="/assets/images/oil.png" alt="Oil Compressor" />
             </div>
-            <div>
-              <div class="product-title" data-i18n="product_1">Oli</div>
+
+            <div class="product-content">
+              <div class="product-title" data-i18n="product_1">
+                Oli Kompresor
+              </div>
+
               <p data-i18n="product_1_desc">
                 Oli kompresor berkualitas tinggi untuk menjaga performa dan umur
                 mesin compressor industri.
-              </p>
+              </p>  
+
+              <a
+                href="https://wa.me/6285791719393?text=Halo%20PT.%20Dayasa%20Cipta%20Mandiri,%20saya%20ingin%20memesan%20Oli%20Compressor."
+                target="_blank"
+                class="produk-btn"
+                data-i18n="product_order"
+              >
+                Pesan Sekarang
+              </a>
             </div>
           </div>
         </div>
@@ -416,6 +429,21 @@
         </div>
 
         <div class="gallery-nav" id="galNav"></div>
+      </section>
+
+      <!-- TESTIMONI -->
+      <section id="testimoni">
+        <div class="testimoni-header">
+          <h2 class="section-label reveal" data-i18n="testimoni_label">
+            Apa Kata Mereka?
+          </h2>
+        </div>
+
+        <div class="t-track-wrap reveal">
+          <div class="t-track" id="tTrack"></div>
+        </div>
+
+        <div class="t-dots" id="tDots"></div>
       </section>
 
       <!-- BRANDS -->
