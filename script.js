@@ -6,8 +6,8 @@ const translations = {
     nav_team: "Tim Kami",
     nav_gallery: "Galeri",
     nav_contact: "Hubungi Kami",
-    hero_h1: "PT. DAYASA CIPTA MANDIRI<span>Servis Kompresor</span>",
-    hero_gallery_h1: "PT. DAYASA CIPTA MANDIRI<span>Galeri Dokumentasi</span>",
+    hero_h1: "PT. Dayasa Cipta Mandiri<span>Servis Kompresor</span>",
+    hero_gallery_h1: "PT. Dayasa Cipta Mandiri<span>Galeri Dokumentasi</span>",
     hero_desc:
       "Melayani jasa Service, Overhaul, Maintenance, Troubleshooting Compressor, Air Dryer dan Penyediaan Kompresor Baru/Bekas, Sparepart serta Rental Kompresor",
     hero_desc_gallery:
@@ -16,9 +16,9 @@ const translations = {
       "Gratis Biaya Pengecekan Untuk Wilayah Surabaya, Sidoarjo, Gresik & Mojokerto",
     tentang_label: "Tentang Kami",
     tentang_p1:
-      "<strong>PT. DAYASA CIPTA MANDIRI</strong> adalah perusahaan yang bergerak di bidang servis dan perawatan kompresor angin (air compressor), Screw Kompresor, Piston Kompresor, Air Dryer, jual/beli kompresor baru/bekas, rental kompresor serta penyediaan sparepart asli/OEM. Kami berdedikasi untuk menyediakan layanan teknis berkualitas tinggi yang mendukung kelangsungan produksi dan operasional industri di Indonesia. Dengan teknisi berpengalaman lebih dari 10 tahun dan profesional, kami memahami pentingnya kinerja optimal kompresor udara untuk mendukung produktivitas dan efisiensi energi.",
+      "<strong>PT. Dayasa Cipta Mandiri</strong> adalah perusahaan yang bergerak di bidang servis dan perawatan kompresor angin (air compressor), Screw Kompresor, Piston Kompresor, Air Dryer, jual/beli kompresor baru/bekas, rental kompresor serta penyediaan sparepart asli/OEM. Kami berdedikasi untuk menyediakan layanan teknis berkualitas tinggi yang mendukung kelangsungan produksi dan operasional industri di Indonesia. Dengan teknisi berpengalaman lebih dari 10 tahun dan profesional, kami memahami pentingnya kinerja optimal kompresor udara untuk mendukung produktivitas dan efisiensi energi.",
     tentang_p2:
-      "<strong>PT. DAYASA CIPTA MANDIRI</strong> akan terus berusaha memberikan layanan terbaik dan berkualitas untuk memenuhi persyaratan spesifikasi Anda. Anda dapat yakin bahwa perusahaan kami dapat mengatasi masalah dan memberikan solusi terbaik untuk merawat dan memelihara fasilitas Anda.",
+      "<strong>PT. Dayasa Cipta Mandiri</strong> akan terus berusaha memberikan layanan terbaik dan berkualitas untuk memenuhi persyaratan spesifikasi Anda. Anda dapat yakin bahwa perusahaan kami dapat mengatasi masalah dan memberikan solusi terbaik untuk merawat dan memelihara fasilitas Anda.",
     visi_title: "Visi",
     visi_text:
       "Menjadi perusahaan terpercaya dan profesional di bidang servis, overhaul, rental, penjualan kompresor serta penyedia sparepart kompresor di Indonesia dengan mengutamakan kualitas, kecepatan layanan, dan kepuasan pelanggan.",
@@ -95,20 +95,20 @@ const translations = {
     nav_team: "Our Team",
     nav_gallery: "Gallery",
     nav_contact: "Contact Us",
-    hero_h1: "PT. DAYASA CIPTA MANDIRI<span>Compressor Service</span>",
+    hero_h1: "PT. Dayasa Cipta Mandiri<span>Compressor Service</span>",
     hero_gallery_h1:
-      "PT. DAYASA CIPTA MANDIRI<span>Documentation Gallery</span>",
+      "PT. Dayasa Cipta Mandiri<span>Documentation Gallery</span>",
     hero_desc:
       "Serving Service, Overhaul, Maintenance, Troubleshooting for Compressor, Air Dryer and Providing New/Used Compressor, Sparepart and Compressor Rental",
     hero_desc_gallery:
-      "Documentation of service, overhaul, maintenance and activities of PT. Dayasa Cipta Mandiri technicians.",
+      "Documentation of service, overhaul, maintenance and activities of PT. Dayasa Cipta Mandiri technicians",
     hero_free_check:
       "Free Inspection Fee for Surabaya, Sidoarjo, Gresik & Mojokerto Areas",
     tentang_label: "About Us",
     tentang_p1:
-      "<strong>PT. DAYASA CIPTA MANDIRI</strong> is a company engaged in the field of air compressor service and maintenance, Screw Compressor, Piston Compressor, Air Dryer, buying/selling new/used compressors, compressor rental as well as providing original/OEM spare parts. We are dedicated to providing high-quality technical services that support the sustainability of production and industrial operations in Indonesia. With technicians experienced for more than 10 years and professional, we understand the importance of optimal performance of air compressors to support productivity and energy efficiency.",
+      "<strong>PT. Dayasa Cipta Mandiri</strong> is a company engaged in the field of air compressor service and maintenance, Screw Compressor, Piston Compressor, Air Dryer, buying/selling new/used compressors, compressor rental as well as providing original/OEM spare parts. We are dedicated to providing high-quality technical services that support the sustainability of production and industrial operations in Indonesia. With technicians experienced for more than 10 years and professional, we understand the importance of optimal performance of air compressors to support productivity and energy efficiency.",
     tentang_p2:
-      "<strong>PT. DAYASA CIPTA MANDIRI</strong> will continue to strive to provide the best and quality services to meet your specification requirements. You can be assured that our company can handle problems and provide the best solutions to care for and maintain your facilities.",
+      "<strong>PT. Dayasa Cipta Mandiri</strong> will continue to strive to provide the best and quality services to meet your specification requirements. You can be assured that our company can handle problems and provide the best solutions to care for and maintain your facilities.",
     visi_title: "Vision",
     visi_text:
       "To become a trusted and professional company in the field of compressor service, overhaul, rental, sales and provision of compressor spare parts in Indonesia by prioritizing quality, speed of service, and customer satisfaction.",
