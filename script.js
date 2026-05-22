@@ -6,8 +6,8 @@ const translations = {
     nav_team: "Tim Kami",
     nav_gallery: "Galeri",
     nav_contact: "Hubungi Kami",
-    hero_h1: "PT. Dayasa Cipta Mandiri<span>Servis Kompresor</span>",
-    hero_gallery_h1: "PT. Dayasa Cipta Mandiri<span>Galeri Dokumentasi</span>",
+    hero_h1: "<span>Servis Kompresor</span>PT. Dayasa Cipta Mandiri",
+    hero_gallery_h1: "<span>Galeri Dokumentasi</span>PT. Dayasa Cipta Mandiri",
     hero_desc:
       "Melayani jasa Service, Overhaul, Maintenance, Troubleshooting Compressor, Air Dryer dan Penyediaan Kompresor Baru/Bekas, Sparepart serta Rental Kompresor",
     hero_desc_gallery:
@@ -95,9 +95,9 @@ const translations = {
     nav_team: "Our Team",
     nav_gallery: "Gallery",
     nav_contact: "Contact Us",
-    hero_h1: "PT. Dayasa Cipta Mandiri<span>Compressor Service</span>",
+    hero_h1: "<span>Compressor Service</span>PT. Dayasa Cipta Mandiri",
     hero_gallery_h1:
-      "PT. Dayasa Cipta Mandiri<span>Documentation Gallery</span>",
+      "<span>Documentation Gallery</span>PT. Dayasa Cipta Mandiri",
     hero_desc:
       "Serving Service, Overhaul, Maintenance, Troubleshooting for Compressor, Air Dryer and Providing New/Used Compressor, Sparepart and Compressor Rental",
     hero_desc_gallery:
